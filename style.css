@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: "ROBOTO", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Circular-Loom";
 }
 
 .nav,
@@ -23,7 +25,7 @@ body {
 
 .nav h1,
 .slider h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Circular-Loom", sans-serif;
   font-size: 5vw;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -40,19 +42,52 @@ h1:hover {
 .slider h2 {
   font-size: 2vw;
   letter-spacing: 0.3rem;
-  font-family: "ROBOTO", sans-serif;
+  font-family: "Circular-Loom", sans-serif;
   font-weight: 300;
-  color: #faebd7;
+  color: #000000;
   z-index: 4;
 }
+
+
+.section-big-subtitle {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+  font-size: 3.5rem;
+  width: auto;
+}
+
+.section-subtitle-3 {
+  text-align: left;
+  color: var(--black-color);
+  font-size: 1.5vmax;
+  width: auto;
+}
+.index-content-aside {
+  margin-right: 1rem;
+  /* margin-top: 4rem; */
+}
+
+
+
+
+
 h3.span {
   font-size: 2vw;
   letter-spacing: 0.7em;
-  font-family: "ROBOTO", sans-serif;
+  font-family: "Circular-Loom", sans-serif;
   font-weight: 300;
   color: #faebd7;
   z-index: 4;
 }
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 span:hover {
   color: #57c6ec;
   font-weight: 500;
@@ -120,6 +155,9 @@ a {
   right: 0;
   z-index: auto;
 }
+
+
+
 @media (min-width: 800px) {
   .nav h1,
   .slider h1 {
