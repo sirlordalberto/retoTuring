@@ -49,31 +49,6 @@ h1:hover {
 }
 
 
-.section-big-subtitle {
-  text-align: left;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  color: var(--black-color);
-  font-size: 3.5rem;
-  width: auto;
-}
-
-.section-subtitle-3 {
-  text-align: left;
-  color: var(--black-color);
-  font-size: 1.5vmax;
-  width: auto;
-}
-.index-content-aside {
-  margin-right: 1rem;
-  /* margin-top: 4rem; */
-}
-
-
-
-
-
 h3.span {
   font-size: 2vw;
   letter-spacing: 0.7em;
@@ -155,6 +130,81 @@ a {
   right: 0;
   z-index: auto;
 }
+
+/*************************************************** Articulo ***************************************/
+.text-section {
+  overflow-x: clip;
+  width: 100%;
+  height: auto;
+}
+.o-h-m {
+  overflow-x:hidden;
+}
+.section {
+  padding: 4vh var(--inicial-margin) 4vh var(--inicial-margin);
+}
+.third-content {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.relative {
+  position: relative;
+}
+.oval-half {
+  width: 30vw;
+  height: 20vh;
+  clip-path: circle(50%);
+
+}
+.float-right-center {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 20%;
+  z-index: 99;
+}
+.img-size3 {
+  max-width: none;
+}
+.index-content-aside {
+  margin-right: 1rem;
+  /* margin-top: 4rem; */
+}
+.section-title-3 {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--first-color);
+  font-size: 1.2rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.rombo {
+  border: 3px solid;
+  transform: rotate(25deg);
+}
+.float-left {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 100;
+  overflow-x: hidden;
+}
+.img-size {
+  max-width: none;
+  width: 40vmin;
+  height: 25vmin;
+}
+
+/*************************************************** Fin de Articulo ***************************************/
+
+
+
 
 
 
