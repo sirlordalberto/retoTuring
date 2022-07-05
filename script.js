@@ -132,10 +132,18 @@ class NavigationPage {
   }
 }
 
+
+var h1 = document.getElementById("myH1");
+var myP = document.getElementById("myP");
+
+h1.addEventListener("mouseover", mouseOver);
+h1.addEventListener("mouseout", mouseOut);
+
+function mouseOver(){
+	h1.innerHTML = "MÁS INFORMACIÓN";
+}
+function mouseOut(){
+  h1.innerHTML = "QUE REALIZAMOS";
+}
+
 new NavigationPage();
-/* Credit and Thanks:
-Matrix - Particles.js;
-SliderJS - Ettrics;
-Design - Sara Mazal Web;
-Fonts - Google Fonts
-*/

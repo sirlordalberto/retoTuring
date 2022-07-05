@@ -7,7 +7,7 @@
 body {
   font-weight: 400;
   font-style: normal;
-  font-family: "Circular-Loom";
+  font-family: "Raleway";;
 }
 
 .nav,
@@ -19,13 +19,13 @@ body {
   height: 100vh;
   position: relative;
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
   padding: 0 2em;
 }
 
 .nav h1,
 .slider h1 {
-  font-family: "Circular-Loom", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 4vw;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -72,6 +72,7 @@ span:hover {
 a {
   text-decoration: none;
 }
+
 
 .nav-container {
   display: flex;
@@ -131,14 +132,83 @@ a {
   z-index: auto;
 }
 
-.container{
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  gap: 10;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
 }
-.child{
-  flex-grow: 1;
+/*----------------------------------------ESTILO DE LOS ARTICULOS----------------------------*/
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
 }
+.main {
+  text-align: left;
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: .1 auto;
+  }
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 1 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+}
+
+p{
+  font-size: 30px;
+}
+p.subtitle{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #57c6ec;
+  font-weight: bold;
+  line-height: 3;
+}
+.oval-half-left {
+  width: 20vw;
+  height: 30vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);  
+}
+.oval-half-right {
+  width: 20vw;
+  height: 30vh;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);  
+}
+
+.text-section {
+  overflow-x: clip;
+  width: 100%;
+  height: auto;
+}
+.section {
+  padding: 4vh 4vw 4vh 4vw;
+}
+
+
+
+
+
+/*----------------------------------------FIN DE ESTILO DE LOS ARTICULOS----------------------------*/
 
 @media (min-width: 800px) {
   .nav h1,
