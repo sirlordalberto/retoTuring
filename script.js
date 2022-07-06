@@ -134,7 +134,6 @@ class NavigationPage {
 
 
 var h1 = document.getElementById("myH1");
-var myP = document.getElementById("myP");
 
 h1.addEventListener("mouseover", mouseOver);
 h1.addEventListener("mouseout", mouseOut);
@@ -146,4 +145,27 @@ function mouseOut(){
   h1.innerHTML = "QUE REALIZAMOS";
 }
 
+var h1N = document.getElementById("myH1N");
+
+h1N.addEventListener("mouseover", mouseOver);
+h1N.addEventListener("mouseout", mouseOut);
+
+function mouseOver(){
+	h1N.innerHTML = "MÁS INFORMACIÓN";
+}
+function mouseOut(){
+  h1N.innerHTML = "NOSOTROS";
+}
+
+var h1S = document.getElementById("myH1S");
+
+h1S.addEventListener("mouseover", mouseOver);
+h1S.addEventListener("mouseout", mouseOut);
+
+function mouseOver(){
+	h1S.innerHTML = "MÁS INFORMACIÓN";
+}
+function mouseOut(){
+  h1S.innerHTML = "SERVICIOS";
+}
 new NavigationPage();
