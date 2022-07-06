@@ -134,6 +134,9 @@ class NavigationPage {
 
 
 var h1 = document.getElementById("myH1");
+var h1N = document.getElementById("myH1N");
+var h1S = document.getElementById("myH1S");
+var h1T = document.getElementById("myH1T");
 
 h1.addEventListener("mouseover", mouseOver);
 h1.addEventListener("mouseout", mouseOut);
@@ -145,27 +148,37 @@ function mouseOut(){
   h1.innerHTML = "QUE REALIZAMOS";
 }
 
-var h1N = document.getElementById("myH1N");
 
-h1N.addEventListener("mouseover", mouseOver);
-h1N.addEventListener("mouseout", mouseOut);
+h1N.addEventListener("mouseover", mouseOver1);
+h1N.addEventListener("mouseout", mouseOut1);
 
-function mouseOver(){
+function mouseOver1(){
 	h1N.innerHTML = "MÁS INFORMACIÓN";
 }
-function mouseOut(){
+function mouseOut1(){
   h1N.innerHTML = "NOSOTROS";
 }
 
-var h1S = document.getElementById("myH1S");
 
-h1S.addEventListener("mouseover", mouseOver);
-h1S.addEventListener("mouseout", mouseOut);
+h1S.addEventListener("mouseover", mouseOver2);
+h1S.addEventListener("mouseout", mouseOut2);
 
-function mouseOver(){
+function mouseOver2(){
 	h1S.innerHTML = "MÁS INFORMACIÓN";
 }
-function mouseOut(){
+function mouseOut2(){
   h1S.innerHTML = "SERVICIOS";
 }
+
+
+h1T.addEventListener("mouseover", mouseOver3);
+h1T.addEventListener("mouseout", mouseOut3);
+
+function mouseOver3(){
+	h1T.innerHTML = "MÁS INFORMACIÓN";
+}
+function mouseOut3(){
+  h1T.innerHTML = "TABLEAU";
+}
+
 new NavigationPage();
