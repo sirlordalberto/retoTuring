@@ -1,3 +1,7 @@
+:root {
+  --first-color: rgb(70, 113, 229);
+
+}
 * {
   margin: 0;
   padding: 0;
@@ -142,6 +146,85 @@ a {
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+}
+
+.formulario{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.contact{
+  height: 70vh;
+  width: 75vh;
+  border-radius: 1rem;
+  display: grid;
+  box-shadow: 0 .2rem .5rem #0006;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  gap: 0px;
+  height: 100%;
+ 
+}
+.map{
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 3;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+   
+}
+
+.form{
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 3;
+   grid-column-end: 5;
+   border-top-right-radius: 1rem;
+}
+
+.figure1{
+   grid-row-start: 4;
+   grid-column-start: 4;
+
+   grid-row-end: 5;
+   grid-column-end: 5;
+   border-bottom-right-radius: 1rem;
+
+}
+.figure2{ 
+   grid-row-start: 3;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 4;
+
+
+}
+.figure3{
+   grid-row-start: 4;
+   grid-column-start: 3;
+
+   grid-row-end: 5;
+   grid-column-end: 4;
+
+}
+.figure4{ 
+   grid-row-start: 3;
+   grid-column-start: 4;
+
+   grid-row-end: 4;
+   grid-column-end: 5;
+
 }
 /*----------------------------------------ESTILO DE LOS ARTICULOS----------------------------*/
 /*-----INICIO------*/
@@ -426,4 +509,50 @@ p.subtitle{
 }
 .loader span:nth-child(22) {
   -webkit-animation-delay: 2.1s;
+}
+
+
+
+/*TARGETAS*/
+.contact-card {
+  margin-top: 0;
+}
+.index-content-aside {
+  margin-right: 1rem;
+  /* margin-top: 4rem; */
+}
+
+.contact-call img,
+.contact-mail img,
+.contact-map img {
+}
+.contact-card {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-card > svg {
+  fill: var(--first-color);
+  width: 7rem;
+  height: 5rem;
+}
+.contact-card .primer-svg {
+  width: 7rem;
+  height: 5rem;
+}
+.contact-card:chil {
+  fill: var(--first-color);
+  width: 5rem;
+  height: 3rem;
+}
+.contact-card > h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.contact-card > small {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
 }

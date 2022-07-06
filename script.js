@@ -137,6 +137,7 @@ var h1 = document.getElementById("myH1");
 var h1N = document.getElementById("myH1N");
 var h1S = document.getElementById("myH1S");
 var h1T = document.getElementById("myH1T");
+var h1C = document.getElementById("myH1C");
 
 h1.addEventListener("mouseover", mouseOver);
 h1.addEventListener("mouseout", mouseOut);
@@ -181,4 +182,13 @@ function mouseOut3(){
   h1T.innerHTML = "TABLEAU";
 }
 
+h1C.addEventListener("mouseover", mouseOver4);
+h1C.addEventListener("mouseout", mouseOut4);
+
+function mouseOver4(){
+	h1C.innerHTML = "MÁS INFORMACIÓN";
+}
+function mouseOut4(){
+  h1C.innerHTML = "CONTACTO";
+}
 new NavigationPage();
