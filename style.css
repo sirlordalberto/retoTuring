@@ -148,6 +148,15 @@ a {
   text-align: center;
 }
 
+.text-center {
+  text-align: center;
+}
+.formularioTitulo{
+  color: #000000;
+  font: 500 1.8rem sans-serif;
+  padding: 0 2rem;
+}
+
 .formulario{
   margin: 0;
   padding: 0;
@@ -158,9 +167,37 @@ a {
   justify-items: center;
   
 }
+.form form{
+  padding: 0 2rem;
+}
+.form input, .form textarea{
+  padding: 1rem;
+  width: 100%;
+  border: .08rem solid var(--first-color);
+  border-radius: 2rem;
+  background-color: unset;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.form input:not(:first-child), .form textarea, .form button{
+  margin-top: .8rem;
+  
+}
+.form textarea{
+  height: 6rem;
+  resize: none;
+}
+.form button{
+  background-color: var(--first-color);
+  padding: 1rem 2rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  border: none;
+}
 .contact{
   height: 70vh;
-  width: 75vh;
+  width: 150vh;
   border-radius: 1rem;
   display: grid;
   box-shadow: 0 .2rem .5rem #0006;
@@ -182,15 +219,18 @@ a {
   border-bottom-left-radius: 1rem;
    
 }
-
 .form{
    grid-row-start: 1;
    grid-column-start: 3;
-
    grid-row-end: 3;
    grid-column-end: 5;
    border-top-right-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: relative;
 }
+
 
 .figure1{
    grid-row-start: 4;
